@@ -11,10 +11,10 @@ const server = http.createServer(app)
 const io = socketio(server)
 
 //socket code
-io.on('connection', (socket) => {
+io.on('connection', (socket) => {           // connection event
     console.log("We have a new connection !!!");
 
-    socket.on('join', ({name, room}) => {
+    socket.on('join', ({name, room}) => {   // user join event with name & room
         console.log(name, room);
     })
 
@@ -27,7 +27,7 @@ io.on('connection', (socket) => {
     //     }
     // })
 
-    socket.on('disconnect', () =>{
+    socket.on('disconnecting', () =>{
         console.log("User had left !!");
     })
 })

@@ -29,6 +29,10 @@ const Chat = ( {location} ) =>{
         //     alert(error)
         // })
         
+        return() =>{
+            socket.emit('disconnecting') // unmounting useEffect, user will left the chat
+            socket.off()
+        }
     }, [ENDPOINT, location.search]) //rerender only if name/room change
     return(
         <h1>Chat</h1>
