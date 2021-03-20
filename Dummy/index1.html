@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <!-- defer: script runs in background and it runs when DOM ready -->
+  <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+  <script defer src="js/client.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style1.css">
+  
+
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="msg-header">
+            <div class="msg-header-img">
+              <img src="user2.png" />
+            </div>
+            <div class="active">
+              <h4>Rahul Sarma</h4>
+              <h6>3 hours ago ...</h6>
+            </div>
+            <div class="header-icons">
+              <i class="fa fa-info-circle"></i>
+            </div>
+          </div>
+
+
+        <div style="border: 2px dotted green; height: 20vh;">
+            chats will appear here
+            <div class="containerABc"></div>
+        </div>
+
+        <div class="msg-bottom">
+            <div class="bottom-icons">
+              <!-- <i class="fa fa-phone"></i>
+              <i class="fa fa-camera"></i> -->
+            </div>
+    
+            <!-- <div class="input-group">
+              <input type="text" class="form-control" placeholder="Write message.." />
+              <div class="input-group-append">
+                <span class="input-group-text"><i class="fa fa-paper-plane"></i> </span>
+              </div>
+            </div> -->
+
+            <div class="input-group">
+                <form action="#" id="send-container" class="form-inline">
+                      <div class="form-group mx-sm-3 mb-2">
+                        <label for="messageInp" class="sr-only">Password</label>
+                        <input type="text" name="messageInp" class="form-control" id="messageInp" placeholder="Write message.." />
+                      </div>
+                      <button type="submit" class="btn btn-primary mb-2"><i class="fa fa-paper-plane"></i></i></button>
+                </form>
+            </div>
+          </div>
+
+
+
+    </div>
+
+    <!-- <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp" id="messageInp" />
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div> -->
+
+</body>
+</html>

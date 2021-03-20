@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The HTML5 Herald</title>
+  <!-- defer: script runs in background and it runs when DOM ready -->
+  <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+  <script defer src="js/client.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styleFinal.css">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Aubrey' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Chelsea Market' rel='stylesheet'>
+
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+        <!-- <h1>Welcome to i-Chat App</h1> -->
+    </nav>
+    
+    <!-- Header  -->
+    <div class="msg-header">
+        <div class="msg-header-img">
+          <img src="img/user2.png" />
+        </div>
+        <div class="active">
+          <h4 id="NAME"></h4>
+        </div>
+        <div>
+          <h1 id="aLLusers"></h1>
+        </div>
+      </div>
+
+    <div class="containerABc"></div>
+
+    <div class="bottom">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp" id="messageInp" autocomplete="off" placeholder="Write message.." />
+            <button class="btn" type="submit"><i class="fa fa-paper-plane-o"></i></button>
+        </form>
+    </div>
+  </div>
+</body>
+</html>
